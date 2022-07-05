@@ -1,7 +1,7 @@
 package sg.edu.np.edu.mad.s10205175_week2practical;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.fragment.app.Fragment;
 import android.view.View;
 import android.widget.Button;
 import android.os.Bundle;
@@ -33,7 +33,7 @@ public class MessageGroup extends AppCompatActivity {
             }
         });
     }
-    public void repFragments(groupFragment frag){
+    public void repFragments(Fragment frag){
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.frame,frag);
         ft.commit();
