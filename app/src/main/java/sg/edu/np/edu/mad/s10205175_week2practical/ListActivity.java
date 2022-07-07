@@ -68,7 +68,7 @@ public class ListActivity extends AppCompatActivity {
 
     }
 
-    //method to initialise 20 random users
+
     public static ArrayList<userclass> initRandomUser(){
         ArrayList<userclass> userList = new ArrayList<userclass>();
 
@@ -79,7 +79,7 @@ public class ListActivity extends AppCompatActivity {
             Integer randId;
             Boolean randFollowed = rand.nextBoolean();
 
-            //ensure id does not clash
+
             while (true){
                 Boolean repeatId = false;//set repeating id conition to false
                 randId = Math.abs(rand.nextInt());
